@@ -1,0 +1,16 @@
+---
+DHCPSecurityBindingTable:
+  rpc: get-dhcp-security-binding
+  item: dhcp-security-entries/dhcp-security-entry
+  key: hw-address
+  view: DHCPSecurityBindingView
+  
+DHCPSecurityBindingView:
+    fields:
+        ip_address: ip-address
+        hw_address: hw-address
+        vlan_name: vlan-name
+        lease_expiry: lease-expiry
+        state: state
+        intf_name: intf-name
+"""
